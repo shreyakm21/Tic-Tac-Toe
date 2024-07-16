@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: teal;
+    text-align: center;
+}
+/*.TTT{
+    color: burlywood;
+    font-size: 4rem;
+    text-shadow: 0 0 10px rgba(0,0,0,1);
+    font-family: cursive;
+    text-shadow: 5px 8px black;
+}*/
+
+.TTT{
+    color: burlywood;
+    font-size: 4rem;
+    text-shadow: 5px 8px black;
+    font-family: cursive; 
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+    typing 1s steps(20, end) forwards;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1.5rem rgba(0,0,0,1);
+    font-size: 8vmin;
+    background-color: lightyellow;
+}
+.box:hover {
+    transform: scale(1.1);
+  }
+.box.remHover{
+    transform: scale(1);
+    opacity: 0.7;
+}
+.box.green{
+    background-color: lightgreen;
+}
+.box.red{
+    background-color:lightcoral;
+}
+
+#reset{
+    padding: 1rem;
+    font-size:1.25rem ;
+    cursor: pointer;
+    background-color: violet;
+    font-size: 1.5rem;
+    box-shadow:0 0 60px 15px #fff;
+    border: none;
+    color: black;
+}
+#reset:hover{
+    background-color: darkorchid;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+
+#newbtn{
+    padding: 1rem;
+    font-size:1.25rem ;
+    background-color: greenyellow;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s;
+    border-radius: 15px;
+    box-shadow:0 0 60px 15px #fff;
+    border: 3px solid darkgreen;
+    color: black;
+}
+#newbtn:hover{
+    background-color: green;
+    color: aliceblue;
+}
+
+#newbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #newbtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #newbtn:hover span {
+    padding-right: 25px;
+  }
+  
+  #newbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#msg{
+    color: lightyellow;
+    font-size: 8vmin;
+}
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+.hide{
+    display: none;
+}
